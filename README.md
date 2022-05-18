@@ -27,7 +27,7 @@ organize-me.aws_access_key        # Access Key
 organize-me.aws_secret_access_key # Secret Access Key
 
 # --== SMTP ==-- #
-organize-me.smt_host              # SMTP host
+organize-me.smtp_host              # SMTP host
 organize-me.smtp_port             # SMTP port
 organize-me.smtp_username         # SMTP username
 organize-me.smtp_password         # SMTP password
