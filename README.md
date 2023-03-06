@@ -18,7 +18,7 @@ Default output format [None]:
 ```
 
 ## Aws Paramiters
-A number of the paramiters are saved in AWS's SSM paramiter store. This saves credentals off-site in the event of a system failure. All of these paramiters need to be encrypted.
+A number of the paramiters are saved in AWS's SSM paramiter store. This saves credentals off-site in the event of a system failure. All of these paramiters need to be encrypted. If you're using the example user policy, each property will need to be tagged with {name: "organize-me", value: "${domain}"}
 
 ```
 # --== AWS ==-- #
