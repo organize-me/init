@@ -1,12 +1,11 @@
 # AWS
-Though these services are running locally, I am using AWS for DNS, SMTP, offsite backups, and secure paramiters.
+Though these services are running locally, I am using AWS for DNS, SMTP, offsite backups, and secure paramiters. The following will need to be setup by an admin (probably you) to support the self-hosted services.
 
-## Aws User
-Create a programtic user (with access key and secret access key). You'll need read/write access to S3, SSM Properties, and Route 53. To make sure you have suffesent permissions, assign your user to a group with the following policies:
-
-* AmazonS3FullAccess
-* AmazonSSMFullAccess
-* AmazonRoute53FullAccess
+ * User - A limited user that can perform the needed tasks but is limited to the organize-me resources
+ * KMS key - A key for encrypting/decrypting data. The created user will need access to this key too.
+ * Route53 Hosted Zone - To manage your public DNS.
+ * SMTP - Used to send out password reset emails and notifications. Currently my smtp is managed in AWS.
+ 
 
 ## Aws-Cli
 Install the aws-cli and configure it with the user.
