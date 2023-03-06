@@ -1,7 +1,7 @@
 # AWS
 Though these services are running locally, I am using AWS for DNS, SMTP, offsite backups, and secure paramiters. The following will need to be setup by an admin (probably you) to support the self-hosted services.
 
- * User - A limited user that can perform the needed tasks but should be limited to the organize-me resources
+ * User - A user that can perform the needed tasks, but this user should be limited to organize-me related resources.
  * KMS key - A key for encrypting/decrypting data. The created user will need access to this key too.
  * Route53 Hosted Zone - To manage your public DNS.
  * SMTP - Used to send out password reset emails and notifications. Currently my smtp is managed in AWS.
