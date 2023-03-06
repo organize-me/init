@@ -5,6 +5,7 @@ Though these services are running locally, I am using AWS for DNS, SMTP, offsite
  * KMS key - A key for encrypting/decrypting data. The created user will need access to this key too.
  * Route53 Hosted Zone - To manage your public DNS.
  * SMTP - Used to send out password reset emails and notifications. Currently my smtp is managed in AWS.
+ * S3 Bucket - A bucket used to keep the terraform-aws state. If using the example policy, the name must be in the format: 'organize-me.${domain}.*'
  
 
 ## Aws-Cli
