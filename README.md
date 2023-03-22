@@ -6,7 +6,12 @@ Though these services are running locally, I am using AWS for DNS, SMTP, offsite
  * Route53 Hosted Zone - To manage your public DNS.
  * SMTP - Used to send out password reset emails and notifications. Currently my smtp is managed in AWS.
  * S3 Bucket - A bucket used to keep the terraform-aws state. If using the example policy, the name must be in the format: 'organize-me.${domain}.*'
- 
+
+## SMTP
+Before running anything, setup your SMTP account in AWS. Because SMTP is often abused, this requires you to make a request to AWS. This includes a manual review. As long as you don't plan on spaming people, you shouldn't run into any issue.
+
+## Route 53
+DNS setting are managed in the terraform-aws project, but you need to have the hosted zones setup for your domain.
 
 ## Aws-Cli
 Install the aws-cli and configure it with the user.
