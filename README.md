@@ -52,9 +52,6 @@ organize-me.nextcloud_db_username       # Nextcloud database username
 organize-me.nextcloud_db_password       # Nextcloud database password
 organize-me.nextcloud_username          # Nextcloud admin username
 organize-me.nextcloud_password          # Nextcloud admin password
-organize-me.nextcloud_access_key        # Nextcloud AWS access key for s3 primary storage (S3 read/write)
-organize-me.nextcloud_secret_access_key # Nextcloud AWS secret key
-organize-me.nextcloud_region            # Nextcloud AWS region
 
 # --== Snipe-IT ==-- #
 organize-me.snipeit_db_username         # Snipe-IT database username
