@@ -1,3 +1,19 @@
+# mDNS
+To referernce our server within the local network, we need to set the hostname and setup mDNS. This allows us to reference our server using the domain `organize-me.local` without needing to configure the DNS server.
+
+## Set the hostname
+```
+sudo hostnamectl set-hostname organize-me
+```
+
+## Setup mDNS
+```
+sudo apt update
+sudo apt install avahi-daemon
+sudo reboot
+```
+
+
 # AWS
 Though these services are running locally, I am using AWS for DNS, SMTP, offsite backups, and secure paramiters. The following will need to be setup by an admin (probably you) to support the self-hosted services.
 
